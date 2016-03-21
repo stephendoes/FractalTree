@@ -9,7 +9,7 @@ public void setup()
 public void draw() 
 {   
 	background(0);   
-	stroke(0,255,0);   
+	stroke(170,30,0);   
 	line(320,480,320,380);   
 	drawBranches(width/2,height-30,100,3*Math.PI/2);
 } 
@@ -34,7 +34,7 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 	line(x,y,endX3, endY3);
 
 	if(branchLength > smallestBranch){
-		stroke((int)(Math.random()*255));
+		stroke((int)(Math.random()*255),255,(int)(Math.random()*255));
 		drawBranches(endX1,endY1,branchLength-15,angle1);
 		drawBranches(endX2,endY2,branchLength-15,angle2);
 		drawBranches(endX3,endY3,branchLength-30,angle3);
