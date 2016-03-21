@@ -15,7 +15,7 @@ public void draw()
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
-	stroke(255);
+	stroke(0,255,0);
 	double angle1 = angle + branchAngle;
 	double angle2 = angle - branchAngle;
 	double angle3 = angle ;
@@ -34,8 +34,8 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 	line(x,y,endX3, endY3);
 
 	if(branchLength > smallestBranch){
-		drawBranches(endX1,endY1,branchLength-10,angle1);
-		drawBranches(endX2,endY2,branchLength-10,angle2);
-		drawBranches(endX3,endY3,branchLength-25,angle3);
+		drawBranches(endX1,endY1,branchLength-5,angle1);
+		drawBranches(endX2,endY2,branchLength-5,angle2);
+		drawBranches(endX3,endY3,branchLength-20,angle3);
 	}   
 } 
